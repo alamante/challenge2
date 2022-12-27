@@ -1,0 +1,871 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto&family=Unbounded:wght@700;800;900&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 200vh;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* header   */
+  .hero-banner{
+  height:25rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.hero-banner::before {    
+  content: "";
+  background: linear-gradient(45deg, rgba(245,70,66, 0.75), rgba(8,83,156, 0.75)),url("/BOOTCAMP/challenge2/images/02-hero-bg.jpg");  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.wel{
+  position: absolute;
+  background-color: green;
+  color: #fff;
+  padding: 1rem;
+  right:10%;
+  bottom: 13%;
+  font-size: 140%;
+}
+
+.name{
+  position: absolute;
+  right: 10%;
+  height: 12.5rem;
+  width: 13rem;
+  background-color:grey;
+  border: 10px solid white;
+  border-bottom: 20px solid white;
+  margin-top: 20px;
+  
+}
+
+
+.nme{
+  position: absolute;
+  font-size: large;
+  font-family: 'oswald', Courier, monospace;
+  right:12%;
+  bottom:37%;
+  z-index: 3;
+ 
+  
+}
+  
+/* header  Ends */
+
+/* logo  */
+
+.h2{
+  font-family: Oswald;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #555555;
+}
+
+#logo{
+  float: left;
+  font-size: 280%;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+#menu{
+  font-size: 110%;
+  list-style-type: none;
+  letter-spacing: 4px;
+}
+
+#logo, #menu{
+  line-height: 75px;
+}
+
+#menu li {
+  float: right;
+  margin-right: 30px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu a:hover{
+  border-bottom: 1px solid #777777;
+}
+
+.active{
+  border-bottom: 1px solid #777777;
+}
+
+
+  
+
+/* logo  Ends */
+
+.page-wrapper{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.page-section1 {
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  
+}
+
+.abtme{
+  border-right: 2px solid rgb(14, 90, 24);
+  margin-right: 2rem;
+  padding-right: 24px;
+  
+}
+
+.desc{
+  margin: auto;
+  padding-right: 5rem;
+}
+
+
+
+.page-section2{
+  display:flex;
+  flex-direction: row;
+  max-height: fit-content;
+  margin-bottom: 40px;
+}
+
+
+.wrk{
+  border-right: 2px solid rgb(14, 90, 24);
+  margin-right: 15px;
+  padding-right: 24px;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas: "header header";
+  object-fit: cover;
+}
+
+
+
+.item1{
+    grid-area: header;
+    position: relative;
+    background-color: black;
+    width: 50rem;
+    height: 25rem;
+}
+
+.item2{
+  background-color: black;
+  position: relative;
+  cursor: pointer;
+}
+
+.item3,.item4,.item5{
+  position:relative;
+  width: 100%;
+  height: 15rem;
+  border: 2px solid green;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-color: black;
+  cursor: pointer;
+ 
+}
+
+.item2:hover{
+  background-color: rgba(0, 0, 0, 0.7)
+}
+
+.item1:hover{
+  background-color: rgba(0, 0, 0, 0.7)
+}
+.item3:hover{
+  background-color: rgba(0, 0, 0, 0.7)
+}
+.item4:hover{
+  background-color: rgba(0, 0, 0, 0.7)
+}
+.item5:hover{
+  background-color: rgba(0, 0, 0, 0.7)
+}
+
+.item1::before {    
+  content: "";
+  background-image: url(/BOOTCAMP/challenge2/images/02-portfolio-2.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.item2::before {    
+  content: "";
+  background-image: url(/BOOTCAMP/challenge2/images/02-portfolio-3.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.item3::before {    
+  content: "";
+  background-image: url(/BOOTCAMP/challenge2/images/02-portfolio-1.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.item4::before {    
+  content: "";
+  background-image: url(/BOOTCAMP/challenge2/images/02-portfolio-4.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.item5::before {    
+  content: "";
+  background-image: url(/BOOTCAMP/challenge2/images/02-run-buddy.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.item6{
+  visibility: hidden;
+}
+
+.label{
+  position: absolute;
+  bottom:20%;
+  left:0;
+  color:white;
+  background-color: green;
+  width:25%;
+  padding:24px;
+  text-align: center;
+  
+}
+
+.label2,.label3,.label4,.label5{
+  position: absolute;
+  bottom:20%;
+  left:0;
+  color:white;
+  background-color: green;
+  padding:24px;
+  text-align: center;
+
+  
+}
+
+
+
+
+
+/* Footer */
+
+.page-section3 {
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  
+}
+
+.footeritems{
+  display:flex;
+  flex-direction: row;
+  margin-left: 80px;
+  align-items: center;
+  
+
+}
+
+.ftlk,span{
+  padding-right: 3rem;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+
+.cntme{
+  border-right: 2px solid rgb(14, 90, 24);
+  padding-left:3rem;
+  padding-right: 3rem; 
+  
+  
+}
+
+
+
+/* Media queries  */
+
+@media screen and (max-width: 996px){
+
+  #menu li {
+    display:flex;
+    flex-direction: row-reverse;
+    float:none;
+    font-weight: bold;
+    height: 2.8rem;
+}
+
+nav{
+  margin: 1rem;
+}
+
+
+
+
+#logo {
+  margin-left: 6.5rem;
+  font-size: 180%;
+  text-transform: uppercase;
+  
+}
+
+
+.page-section1 {
+  display:flex;
+  flex-direction: column;
+  max-height: fit-content;
+  margin-bottom: 40px;
+ 
+}
+
+.page-section2{
+  display:flex;
+  flex-direction: column;
+  
+  
+  
+}
+
+
+.container{
+  display:flex;
+  flex-direction: column;
+  grid-template-columns: none;
+  grid-gap: 0;
+  grid-template-areas: none;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+  .label2,.label3,.label4,.label5{
+    position: absolute;
+    bottom:20%;
+    left:0;
+    color:white;
+    background-color: green;
+    padding:15px;
+    width: 60px;
+    
+  }
+
+  .label{
+    position: absolute;
+    bottom:20%;
+    left:0;
+    color:white;
+    background-color: green;
+    width: 60px;
+    padding:15px;
+    text-align: center;
+    
+  }
+
+  .name{
+position: absolute;
+  right: 10%;
+  height: 200px;
+  width: 200px;
+  background-color:grey;
+  margin-top: 40px;
+  
+  }
+
+  .footeritems{
+    display:flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: center;
+  
+  }
+  
+  .footeritems,.ftlk{
+   font-size: 15px;
+   padding-right: 350px;
+    
+  }
+
+
+  .desc{
+    margin: auto;
+    padding-right: 0;
+
+  }
+
+  .abtme{
+  text-align: center;
+  border:none;
+
+  }
+
+  .wrk {
+    border:none;
+    text-align: center;
+    font-size: 2rem; 
+     
+}
+
+.item1{
+  width: 45rem;
+  height: 25rem;
+  margin-bottom: 0.1rem;
+}
+
+.item2{
+  width: 45rem;
+  height: 25rem;
+  margin-bottom: 0.1rem;
+}
+
+.item4{
+  width: 44.8rem;
+  height: 25rem;
+  margin-bottom: 0.1rem;
+}
+
+.item5{
+  width: 44.8rem;
+  height: 25rem;
+  margin-bottom: 0.1rem;
+}
+
+
+.item3{
+  width: 44.8rem;
+  height: 25rem;
+  margin-bottom: 0.1rem;
+}
+
+.label2,.label3,.label4,.label5{
+  position: absolute;
+  bottom:20%;
+  left:0;
+  color:white;
+  background-color: green;
+  width:60px;
+  padding:4px;
+  text-align: center;
+  height: auto;
+  
+}
+
+.label {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  color: white;
+  background-color: green;
+  width: 60px;
+  padding: 15px;
+  text-align: center;
+  height: auto;
+}
+
+
+label{
+  font-size: 18px;
+  font-weight: 400px;
+  width: 250px;
+  height: 350px;
+}
+
+.page-wrapper {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 5%;
+  
+}
+
+
+/*   footer  */
+
+.page-section3 {
+  display:block;
+  margin-bottom: 40px;
+  
+}
+
+.footeritems{
+  display:block;
+  padding: 0;
+  margin: 0;
+
+}
+
+.ftlk{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  
+}
+
+.inline{
+  text-align: center;
+  display: none;
+}
+
+.hid{
+  display: none;
+}
+
+
+
+.cntme{
+  border-right: 0;
+  margin-right: 0;
+  padding-right: 0;
+  text-align: center;
+  
+  
+}
+
+
+}
+
+
+@media screen and (max-width: 1031px){
+
+  .cntme{
+    display:none
+  }
+
+}
+
+@media screen and (max-width: 743px){
+
+
+
+  .item1{
+    width: 38rem;
+    height: 25rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .item2{
+    width: 38rem;
+    height: 25rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .item4{
+    width: 37.8rem;
+    height: 25rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .item5{
+    width: 37.8rem;
+    height: 25rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  
+  .item3{
+    width: 37.8rem;
+    height: 25rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .label2,.label3,.label4,.label5{
+    position: absolute;
+    bottom:20%;
+    left:0;
+    color:white;
+    background-color: green;
+    width:60px;
+    padding:4px;
+    text-align: center;
+    height: auto;
+    
+  }
+  
+  .label {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    color: white;
+    background-color: green;
+    width: 60px;
+    padding: 15px;
+    text-align: center;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 740px){
+  .desc{
+    width: 34rem;
+  }
+  .hidme{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 615px){
+  .desc{
+    width: 34rem;
+  }
+  .hidme{
+    display:none;
+  }
+
+  .item1,.item2{
+    width: 36rem;
+    height: 15rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .item3,.item4,.item5{
+    width: 35.7rem;
+    height: 15rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 614px){
+  .desc{
+    width: 34rem;
+  }
+  .hidme{
+    display:none;
+  }
+
+  .item1,.item2{
+    width: 34rem;
+    height: 15rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .item3,.item4,.item5{
+    width: 33.7rem;
+    height: 15rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 569px){
+  .desc{
+    width: 32rem;
+  }
+  .hidme{
+    display:none;
+  }
+
+  .item1,.item2{
+    width: 32rem;
+    height: 15rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .item3,.item4,.item5{
+    width: 31.7rem;
+    height: 15rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 533px){
+  .desc{
+    width: 27rem;
+  }
+  .hidme{
+    display:none;
+  }
+
+  .item1,.item2{
+    width: 28rem;
+    height: 13rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+  }
+
+  .item3,.item4,.item5{
+    width: 27.7rem;
+    height: 13rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 497px){
+  .desc{
+    width: 22rem;
+  }
+  .hidme{
+    display:none;
+  }
+
+  .item1,.item2{
+    width: 26rem;
+    height: 13rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .item3,.item4,.item5{
+    width: 25.7rem;
+    height: 13rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 498px){
+  .desc{
+    width: 22rem;
+  }
+  .hidme{
+    display:none;
+  }
+
+  .item1,.item2{
+    width: 22rem;
+    height: 12rem;
+    margin-bottom: 0.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .item3,.item4,.item5{
+    width: 21.7rem;
+    height: 12rem;
+    margin-bottom: 0.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .nme{
+    position: absolute;
+    font-size: large;
+    font-family: 'oswald', Courier, monospace;
+    right:14%;
+    bottom:31.2%;
+    z-index: 3;
+   
+    
+  }
+
+  #logo{
+    float: left;
+    font-size: 180%;
+    text-transform: uppercase;
+    padding-left: -1rem;
+    margin-left: 0;
+  }
+
+  .label2,.label3,.label4,.label5{
+    position: absolute;
+    bottom:20%;
+    left:0;
+    color:white;
+    background-color: green;
+    width:5rem;
+    padding:4px;
+    text-align: center;
+    height: auto;
+    
+  }
+  
+  .label {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    color: white;
+    background-color: green;
+    width: 5rem;
+    padding: 15px;
+    text-align: center;
+    height: auto;
+  }
+
+}
+/* Media queries ends  */
